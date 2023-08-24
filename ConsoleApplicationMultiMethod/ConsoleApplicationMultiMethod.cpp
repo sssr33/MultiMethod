@@ -1,6 +1,7 @@
 // ConsoleApplicationMultiMethod.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "VariantMM.h"
 #include "Typelist.h"
 
 #include <iostream>
@@ -124,6 +125,8 @@ void Collide(ICollidableB* a, ICollidableB* b, ICollidableB* c);
 
 int main()
 {
+    VariantMM_Test();
+
     TestForEachType<TypList1> xx;
 
     ICollidableA a;
